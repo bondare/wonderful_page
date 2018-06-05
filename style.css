@@ -1,0 +1,2018 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 16px;
+  line-height: 26px;
+  /* usually 10px more than the font size */
+  color: black;
+  font-family: "acumin-pro", sans-serif, cursive, serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #de076f;
+}
+
+header::before {
+  /* so parasti raksta, lai viss butu OK - vienmer-standarts */
+  display: table;
+  content: " ";
+}
+
+/* ------------so parasti raksta, lai viss butu OK - vienmer-standarts -------------------- */
+
+header::after {
+  /* so parasti raksta, lai viss butu OK - vienmer-standarts */
+  display: table;
+  content: " ";
+  clear: both;
+  /* lai floats nedarbojas vairák */
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari requires a -webkit- prefix */
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: 999;
+}
+
+section::before {
+  display: table;
+  content: " ";
+}
+
+section::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+footer::before {
+  display: table;
+  content: " ";
+}
+
+footer::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container::before {
+  display: table;
+  content: " ";
+}
+
+.container::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container-fluid::before {
+  display: table;
+  content: " ";
+}
+
+.container-fluid::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 1260px;
+  /* make sure, that's always in the middle */
+  margin-left: auto;
+  /* make sure, that's always in the middle */
+  margin-right: auto;
+}
+
+/* ----------so parasti raksta, lai viss butu OK - vienmer-standarts THE END ------------- */
+
+::selection {
+  background-color: #de076f;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box-10 {
+  width: 10%;
+  float: left;
+}
+
+.box-15 {
+  width: 15%;
+  float: left;
+}
+
+.box-20 {
+  width: 20%;
+  float: left;
+}
+
+.box-25 {
+  width: 25%;
+  float: left;
+  padding-bottom: 20px;
+}
+
+.box-30 {
+  width: 30%;
+  float: left;
+}
+
+.box-33 {
+  width: 33.33%;
+  float: left;
+}
+
+.box-35 {
+  width: 35%;
+  float: left;
+}
+
+.box-40 {
+  width: 40%;
+  float: left;
+}
+
+.box-50 {
+  width: 50%;
+  float: left;
+}
+
+.box-60 {
+  width: 60%;
+  float: left;
+}
+
+.box-70 {
+  width: 70%;
+  float: left;
+}
+
+.box-80 {
+  width: 80%;
+  float: left;
+}
+
+.box-90 {
+  width: 90%;
+  float: left;
+}
+
+.box-100 {
+  width: 100%;
+  float: left;
+}
+
+.logo {
+  height: 110px;
+}
+
+.nav-container img {
+  visibility: hidden;
+}
+
+.top-menu {
+  list-style-type: none;
+  /* for bullet points */
+  padding: 0px;
+  margin: 0px;
+}
+
+.top-menu li {
+  display: inline-block;
+  /* inline-block, jo sis value nem vérá arí augstumu */
+}
+
+.top-menu li a {
+  padding: 10px 10px 4px 10px;
+  font-weight: bold;
+  /*  -webkit-transition: all 0.5s;
+  transition: all 0.5s;*/
+}
+
+.top-menu li a:hover {
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  border-bottom: 3px solid #de076f;
+}
+
+.nav-container {
+  text-align: right;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+#logo {
+  display: block;
+  float: left;
+  position: relative;
+  left: 20px;
+  top: 13px;
+}
+
+.triangles-small {
+  width: 101.0240963855422px;
+}
+
+.triangle-colour:first-child {
+  z-index: 998;
+  right: 0px;
+  position: absolute;
+}
+
+.triangle-small {
+  border-width: 52px 32.5px 0 32.5px;
+}
+
+.triangle {
+  transition: transform 1s;
+}
+
+.triangles-small:hover .triangle, .triangles-medium:hover .triangle, .triangles-large:hover .triangle {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 997;
+}
+
+.triangle-colour {
+  border-color: #f80089 transparent transparent transparent;
+}
+.triangle-medium {
+    border-width: 125px 78.125px 0 78.125px;
+}
+.triangles-medium {
+    width: 242.8463855421688px;
+}
+.brand-dark #logo .logo-text {
+  color: #000;
+}
+
+@media only screen and (max-width: 419px) #logo .logo-text {
+  display: none;
+}
+
+#logo .logo-text {
+  transition: all 1s;
+  position: absolute;
+  color: #000000;
+  font-weight: bold;
+  left: 100px;
+  top: 10px;
+  font-size: 30px;
+  width: 10px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+
+.slider img {
+  height: 550px;
+}
+
+.intro-box article {
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+}
+
+.intro-box h2 {
+  padding-top: 25px;
+  font-size: 40px;
+}
+
+.intro-box p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.intro-box .btn-big {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.btn-big {
+  display: inline-block;
+  border-width: 7px;
+  border-style: solid;
+  border-color: black;
+  padding: 20px 55px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.btn-big:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.brand-box2 .btn-big:hover {
+  color: black;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  /* keep all images in the box (ne vairák ká 20%) */
+  filter: brightness(0);
+}
+
+.partner-logo {
+  padding-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.puppies {
+  width: 100%;
+}
+
+.brand-box {
+  background-color: #00dec1;
+}
+
+.brand-box h2, .brand-box2 h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+#brand-text, #brand-text2 {
+  padding: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+#brand-text p, #brand-text2 p {
+  margin-left: 100px;
+}
+
+.quote-icon {
+  position: absolute;
+  left: 40px;
+  top: 160px;
+  width: 50px;
+}
+
+.quote-icon2 {
+  position: absolute;
+  left: 73px;
+  top: 145px;
+  width: 50px;
+  opacity: 0.2;
+}
+
+.signature p {
+  line-height: 3px;
+  font-size: 14px;
+}
+
+.brand-box2 {
+  background-color: #de076f;
+  color: #fff;
+}
+
+.brand-box2 .btn-big {
+  color: #fff;
+  border-color: #fff;
+}
+
+.brand-box .btn-big, .brand-box2 .btn-big {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.cereal {
+  padding-top: 150px;
+  width: 90%;
+}
+
+.quote-icon3 {
+  position: absolute;
+  left: 40px;
+  top: 160px;
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.quote-icon4 {
+  position: absolute;
+  left: 73px;
+  top: 145px;
+  width: 50px;
+  opacity: 0.2;
+}
+
+.info-box-child {
+  width: 33.33%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+.black-box {
+  background-color: #000;
+  color: #fff;
+  padding-top: 40px;
+  height: 450px;
+  position: relative;
+}
+
+.black-box .btn-big {
+  padding: 20px 30px;
+  width: 220px;
+  margin-top: 2px;
+  position: absolute;
+  bottom: -15px;
+  left: 80px;
+}
+
+.info-box-child .btn-big {
+  color: #fff;
+  border-color: #de076f;
+  margin: 7px 0px 40px 0px;
+}
+
+.info-box-child .btn-big:hover {
+  background-color: #de076f;
+  color: #000;
+}
+
+.info-box {
+  padding-bottom: 60px;
+}
+
+.info-box h1 {
+  font-size: 40px;
+  padding-bottom: 0px;
+}
+
+.info-box .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.black-box p {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.black-box h2 {
+  font-size: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 34px;
+  margin-bottom: 15px;
+}
+
+.trio-circle-1 {
+  width: 114px;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 114px;
+  opacity: 0.7;
+}
+
+.trio-circle-2 {
+  width: 114px;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 114px;
+  opacity: 0.25;
+}
+
+.trio-circle-3 {
+  width: 114px;
+  height: 114px;
+  background-color: #fff;
+  border-radius: 114px;
+  opacity: 0.7;
+}
+
+.trio-circle-1, .trio-circle-2, .trio-circle-3 {
+  display: inline-block;
+}
+
+.circles {
+  padding-bottom: 15px;
+  position: relative;
+  height: 130px;
+}
+
+.trio-circle-1 {
+  position: absolute;
+  top: 0px;
+  left: 75px;
+}
+
+.trio-circle-2 {
+  position: absolute;
+  top: 0px;
+  left: 130px;
+}
+
+.trio-circle-3 {
+  position: absolute;
+  top: 0px;
+  left: 190px;
+}
+
+.submenu {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  display: none;
+}
+
+.submenu li {
+  display: block;
+}
+
+.submenu li a {
+  display: block;
+  background-color: #000;
+  color: grey;
+  text-align: center;
+}
+
+.submenu li a:hover {
+  background-color: #de076f;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* ---------------------------- footer ---------------------------- */
+
+.request {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.request .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.request h1 {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.request .btn-big {
+  background-color: none;
+  color: #000;
+  width: 250px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.request .btn-big:hover {
+  background-color: #de076f;
+  color: #fff;
+}
+
+.brand-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+.brand-dark li a {
+  color: #fff;
+}
+
+.contacts, .terms {
+  list-style-type: none;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.terms {
+  margin-left: 20px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.social {
+  margin-top: 90px;
+  margin-right: 20px;
+}
+
+.social a {
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.social-wrapper a:hover {
+  background-color: #de076f;
+  border-radius: 50%;
+  padding: 20px;
+  width: 72px;
+  height: 72px;
+  -webkit-transition: background-color 0.5s;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s;
+}
+
+.social-wrapper {
+  width: 72px;
+  height: 72px;
+  float: left;
+}
+
+.newsletter {
+  background-color: #cdcdcd;
+}
+
+.newsletter .container {
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+.newsletter .box-35 p {
+  padding: 13px 0px 13px 15px;
+  border: 7px solid #000;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.newsletter .box-35 p:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter .box-50 p {
+  font-size: 19px;
+  padding-top: 20px;
+}
+
+.newsletter .btn-big {
+  padding: 13px 49px 13px 49px;
+  border-color: #de076f;
+  margin-top: 16px;
+  margin-left: 29px;
+  font-size: 16px;
+}
+
+.newsletter .btn-big:hover {
+  background-color: #de076f;
+}
+
+.accreditations .container {
+  padding: 25px 35px 0px 35px;
+}
+
+.accreditations p {
+  opacity: 0.6;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 60px;
+  margin: 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #de076f;
+  font-size: 16px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #de076f;
+  font-size: 16px;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #de076f;
+  font-size: 16px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #de076f;
+  font-size: 16px;
+}
+
+input[type=email] {
+  height: 64px;
+  line-height: 64px;
+  background: none;
+  margin: 16px 20px 16px 0;
+  padding: 13px 160px 13px 15px;
+  border: 7px solid #000;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+input[type=email]:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[placeholder="me@email.co.uk"] {
+  color: #000;
+  font-weight: bold;
+}
+
+/*-------------------------------- about_us.html --------------------------- */
+
+.bg-banner {
+  height: 500px;
+  text-align: center;
+  background-image: url(images/about.jpg);
+  background-size: cover;
+  /* sometimes contain;   */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-banner .container {
+  position: relative;
+}
+
+.bg-text {
+  position: absolute;
+  top: 270px;
+  left: 520px;
+}
+
+.bg-banner h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.bg-banner .btn-big {
+  color: #fff;
+  border-color: #de076f;
+  padding: 22px 25px;
+  font-size: 24px;
+}
+
+.bg-banner .btn-big:hover {
+  color: #000;
+  background-color: #de076f;
+}
+
+.intro-box-2 img {
+  width: 20%;
+  height: 20%;
+}
+
+.intro-box-2 {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.intro-box-2 h1 {
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.intro-box-2 p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+.intro-box-2 .container {
+  padding-bottom: 35px;
+}
+
+.key-players .info-box-child {
+  text-align: left;
+}
+
+.key-players .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.key-players p {
+  font-size: 16px;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+.key-players h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.our-values h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.bg-pic-1 {
+  height: 600px;
+  text-align: center;
+  background-image: url(images/value-creative.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.bg-pic-2 {
+  height: 600px;
+  text-align: center;
+  background-image: url(images/value-collaborative.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.bg-pic-3 {
+  height: 600px;
+  text-align: center;
+  background-image: url(images/value-courageous.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.our-values p, .our-values h2 {
+  color: #fff;
+  margin: 0 0 15px 0;
+  line-height: 1.4;
+}
+
+.our-values h2 {
+  font-size: 40px;
+}
+
+.our-values-text-1, .our-values-text-2, .our-values-text-3 {
+  position: absolute;
+  width: 500px;
+  top: 200px;
+}
+
+.our-values-text-1 {
+  left: 30%;
+}
+
+.our-values-text-2 {
+  left: 30%;
+}
+
+.our-values-text-3 {
+  left: 30%;
+}
+
+.our-values-text-3 p, .our-values-text-3 h2 {
+  color: #000;
+}
+
+.our-awards-accreditations h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.our-awards-accreditations img {
+  padding: 0px 35px 75px 35px;
+}
+
+.big-box {
+  height: 600px;
+  background-color: antiquewhite;
+}
+
+.big-box2 {
+  height: 500px;
+  background-color: burlywood;
+}
+
+.bg2 {
+  height: 600px;
+  text-align: center;
+  background-image: url(images/cereal-killers-cafe.png);
+  background-size: content;
+  /* sometimes contain;   */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*-------------------------------- services.html --------------------------- */
+
+.services-bg-pic {
+  height: 500px;
+  text-align: center;
+  background-image: url(images/services.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
+  color: #fff;
+}
+
+.services-bg-pic .btn-big {
+  color: #fff;
+  border-color: #de076f;
+}
+
+.services-bg-pic h1 {
+  font-size: 40px;
+  max-width: 600px;
+  line-height: 50px;
+}
+
+.services-bg-pic .btn-big:hover {
+  color: #000;
+  background-color: #de076f;
+}
+
+.services-bg-text {
+  position: absolute;
+  top: 200px;
+  left: 330px;
+}
+
+.services-dark {
+  background-color: #000;
+  height: 230px;
+}
+
+.services-dark-text {
+  color: #fff;
+}
+
+.services-dark-text h1 {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.services-dark-text {
+  text-align: center;
+}
+
+.services-dark-text p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-key-services h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.our-key-services h2 {
+  text-align: center;
+}
+
+.our-key-services img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+.our-key-services .btn-big {
+  margin-left: 24%;
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 70px;
+}
+
+.our-key-services {
+  padding-bottom: 20px;
+}
+
+.btn-big.mint {
+  border-color: #00dec1;
+}
+
+.btn-big.mint:hover {
+  background-color: #00dec1;
+}
+
+.btn-big.blue {
+  border-color: #5868dd;
+}
+
+.btn-big.blue:hover {
+  background-color: #5868dd;
+}
+
+.btn-big.purple {
+  border-color: #ae3def;
+}
+
+.btn-big.purple:hover {
+  background-color: #ae3def;
+}
+
+.btn-big.green {
+  border-color: #23e67d;
+}
+
+.btn-big.green:hover {
+  background-color: #23e67d;
+}
+
+.btn-big.orange {
+  border-color: #ff8766;
+}
+
+.btn-big.orange:hover {
+  background-color: #ff8766;
+}
+
+.btn-big.yellow {
+  border-color: #ebce3c;
+}
+
+.btn-big.yellow:hover {
+  background-color: #ebce3c;
+}
+
+.bg-mint {
+  background-color: #00dec1;
+  padding-bottom: 50px;
+}
+
+.bg-mint h1 {
+  font-size: 40px;
+  padding-top: 30px;
+}
+
+.bg-mint-text {
+  text-align: center;
+}
+
+.bg-mint-text p {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-mint-text img {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+.bg-mint-text .btn-big {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-color: #de076f;
+}
+
+.bg-mint-text .btn-big:hover {
+  background-color: #de076f;
+}
+
+.blockquote .quote {
+  font-size: 23px;
+}
+
+.brand-box.services {
+  margin-top: -40px;
+}
+
+.blockquote {
+  padding: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.blockquote p {
+  margin-left: 100px;
+}
+
+.blockquote .quote-icon {
+  top: 40px;
+}
+
+.blockquote .quote-icon2 {
+  top: 30px;
+}
+
+/*-------------------------------- contact.html --------------------------- */
+
+.contact-picture img {
+  width: 100%;
+}
+
+.contact-picture h1 {
+  font-size: 34px;
+}
+
+.contact-picture h3 {
+  font-size: 20px;
+}
+
+.contact-picture h3, .contact-picture h1 {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 920px;
+  text-align: center;
+}
+
+.contact-picture .btn {
+  border: 2px solid #000;
+  padding: 9px 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 40px 0;
+  text-decoration: none;
+  /*margin-right: auto;
+   max-width: 920px;
+   text-align: center;
+*/
+}
+
+.box-50.first {
+  text-align: right;
+  padding: 15px;
+}
+
+.box-50.second {
+  text-align: left;
+  padding: 15px;
+}
+
+.contact-address p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 0.6;
+}
+
+.contact-address a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-map {
+  margin-bottom: 60px;
+}
+
+.contact-map iframe {
+  border: 1px solid #000;
+}
+
+.draggable {
+  background-image: url(images/branding-examples.jpg) center center / auto 100%;
+  left: -61855px;
+  top: 0px;
+  height: 615px;
+  /* width: auto; */
+  max-width: none;
+  width: 10000%;
+  position: relative;
+  cursor: e-resize;
+}
+
+/*-------------------------------- our_work.html --------------------------- */
+
+.our-work-block {
+  display: inline-block;
+}
+
+.our-work-block img {
+  width: 100%;
+}
+
+.our-works .box-33 {
+  padding: 15px;
+}
+
+.our-work-image {
+  position: relative;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.our-work-image:hover .work-overlay {
+  visibility: visible;
+}
+
+.work-comments {
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 30px;
+  margin-bottom: 80px;
+}
+
+.work-comments a {
+  text-decoration: none;
+}
+
+.work-comments h2 {
+  margin: 10px;
+}
+
+.pink {
+  color: #de076f;
+  font-weight: 600;
+}
+
+.hashtag {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 2px 16px 4px 16px;
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.hashtag::before {
+  content: '#';
+  color: #de076f;
+}
+
+/* ------------------------- project CIFAS - our_work --------------------------------------- */
+
+.cifas-section {
+  background-color: #d8d3d6;
+  height: 990px;
+}
+
+.project h1 {
+  font-size: 72px;
+  margin: 60px 0 45px 0;
+}
+
+.project h2 {
+  font-weight: 550;
+  margin: 0 0 15px 0;
+}
+
+.project p {
+  padding: 0 0 14px 0;
+}
+
+.project {
+  text-align: center;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project a {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border: 2px solid #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.background-img img {
+  width: 100%;
+}
+
+.challenge h2 {
+  font-size: 25px;
+  margin: 30px 0 25px 0;
+}
+
+.challenge p {
+  margin: 0 0 10px 0;
+}
+
+.challenge .box-50 {
+  text-align: center;
+  padding: 0 40px 0 40px;
+}
+
+.box-50.pic {
+  text-align: left;
+  padding: 25px 0 30px 150px;
+}
+
+.visitors {
+  background-color: #ac9121;
+  text-align: center;
+}
+
+.visitors h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.visitors .box-33 {
+  margin: 20px 0 40px 0;
+}
+
+.solution h2 {
+  font-size: 25px;
+  margin: 40px 0 30px 0;
+}
+
+.solution p {
+  margin: 0 0 10px 0;
+}
+
+.solution .box-50 {
+  text-align: center;
+  padding: 0 40px 0 40px;
+  margin-bottom: 35px;
+}
+
+.box-50 .mac {
+  text-align: left;
+  padding: 60px 0 0 0;
+}
+
+.quote-section.cifas {
+  background-color: #47247f;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 40%;
+}
+
+.quote-text {
+  text-align: center;
+  color: #fff;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+
+.quote-text h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+
+.company {
+  margin-top: 0;
+}
+
+/* ----------------------- project london_luxury_Quarter - our_work ------------------------------ */
+
+.london-luxury-section {
+  background-color: #efefef;
+  height: 800px;
+}
+
+.box-50 .brochure {
+  text-align: left;
+  padding: 20px 0 0 0;
+}
+
+.quote-section.london-luxury {
+  background-color: #a48547;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 40%;
+}
+
+/* ---------------------- project Cereal Killer Cafe - our_work --------------------------- */
+
+.cereal-killer-section {
+  background-color: #56a0b7;
+  height: 980px;
+}
+
+.cereal-killer-section p {
+  padding: 0 0 18px 0;
+}
+
+.box-50.cereal-bowl {
+  text-align: left;
+  padding-top: 25px;
+}
+
+.visitors.cereal-killers {
+  background-color: #fc9700;
+}
+
+.box-50.cereal-bottle {
+  padding-top: 10px;
+}
+
+.objective h2 {
+  font-size: 25px;
+  margin: 30px 0 25px 0;
+}
+
+.objective p {
+  margin: 0 0 10px 0;
+}
+
+.objective .box-50 {
+  text-align: center;
+  padding: 0 40px 0 40px;
+}
+
+.change h2 {
+  font-size: 25px;
+  margin: 40px 0 30px 0;
+}
+
+.change p {
+  margin: 0 0 10px 0;
+}
+
+.change .box-50 {
+  text-align: center;
+  padding: 0 40px 0 40px;
+  margin-bottom: 10px;
+}
+
+.quote-section.cereal_killer {
+  background-color: #fe4446;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 30%;
+  margin-top: -8px;
+}
+
+.applelap {
+  width: 90%;
+}
+
+.project p {
+  padding: 0 20px 14px 20px;
+}
+
+/* ---------------------- project Kirstie Allsopp - our_work --------------------------- */
+
+.kirstie-logo {
+  text-align: center;
+}
+
+.kirstie-logo img {
+  width: 30%;
+}
+
+.objective.kirstie-allsopp {
+  padding-bottom: 35px;
+}
+
+.quote-section.kirstie-allsopp {
+  background-color: #0fa0aa;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 25%;
+  margin-top: -8px;
+}
+
+/* ---------------------- project Explore Kent - our_work --------------------------- */
+
+.explore-kent-section {
+  background-color: #00603d;
+  color: #fff;
+}
+
+.explore-kent-section img {
+  margin-top: -20px;
+}
+
+.explore-kent-logo {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.quote-section.explore-kent {
+  background-color: #9bc128;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 25%;
+  margin-top: -8px;
+}
+
+.quote-section.explore-kent .quote-text {
+  color: #000;
+}
+
+/* ---------------------- project Carole Nash - our_work --------------------------- */
+
+.carole-nash-section {
+  background-color: #9ad66f;
+  height: 830px;
+}
+
+.carole-nash-logo {
+  text-align: center;
+}
+
+.objective.carole-nash {
+  padding-bottom: 35px;
+}
+
+.quote-section.carole-nash {
+  background-color: #6ac926;
+  background-image: url(images/blockquotes.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1170px;
+  background-position: 50% 25%;
+  margin-top: -8px;
+}
+
+.quote-section.carole-nash .quote-text {
+  color: #000;
+}
+
+/* ----------------------- RESPONSIVE ----------------------------- */
+
+@media screen and (max-width:900px) {
+  /* --- parasti 600px telefonam ---- */
+  body {
+    /* --- stradas 600px and less! ---- */
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+  }
+  .box-25, .box-30, .box-33, .box-35, .box-40, .box-50, .box-60, .box-70, .box-80, .box-90 {
+    width: 100%;
+  }
+  .nav-container {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .nav-container img {
+    width: 50px;
+    padding-top: 29px;
+  }
+  .nav-container img {
+    visibility: visible;
+  }
+  .top-menu {
+    visibility: hidden;
+  }
+  .nav-container:hover .top-menu {
+    visibility: visible;
+  }
+  .top-menu {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 0;
+  }
+  .tel {
+    font-size: 11px;
+  }
+  .top-menu li a {
+    padding: 10px 5px 4px 5px;
+  }
+  .top-menu li a:hover {
+    padding: 10px 5px 4px 5px;
+  }
+  .nav-container {
+    margin-right: 0px;
+  }
+  .slider img {
+    height: 420px;
+  }
+  .intro-box article {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .intro-box h2 {
+    line-height: 0.9;
+    font-size: 35px;
+    padding-top: 10px;
+  }
+  .intro-box p {
+    margin: 5px;
+  }
+  .bg-banner {
+    height: 400px;
+    text-align: center;
+    background-image: url(images/about.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #brand-text, #brand-text2 {
+    padding: 15px;
+    padding-left: 40px;
+    position: relative;
+  }
+  .box-80 {
+    padding-right: 10px;
+  }
+  .brand-box .quotes {
+    text-align: right;
+  }
+  .quote-icon {
+    left: 30px;
+  }
+  .quote-icon2 {
+    left: 53px;
+  }
+  .box-50.second h2 {
+    text-align: right;
+    padding-right: 10px;
+  }
+  .cereal {
+    padding-top: 10px;
+    padding-left: 50px;
+    width: 90%;
+  }
+  .info-box h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .black-box h2 {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .trio-circle-1 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .trio-circle-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    opacity: 0.25;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+  }
+  .trio-circle-3 {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+  }
+  .circles {
+    height: 60px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .black-box p {
+    line-height: 18px;
+  }
+  .btn-big {
+    border-width: 5px;
+  }
+  .info-box-child {
+    width: 100%;
+  }
+  .info-box-child {
+    padding: 5px;
+  }
+  .info-box h2 {
+    line-height: 1.2;
+  }
+  .black-box .btn-big {
+    font-size: 16px;
+    padding: 20px 0px;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+  }
+  .info-box-child .btn-big {
+    width: 80%;
+    left: 10%;
+  }
+  .black-box {
+    height: 350px;
+  }
+  /*------------------- footer --------------------*/
+  .request {
+    width: 100%;
+  }
+  .info-box-child .btn-big.next {
+    margin: 0px 0px 5px 0px;
+  }
+  .info-box-child .btn-big.next.last {
+    margin-bottom: 20px;
+  }
+  .brand-dark {
+    font-size: 15px;
+  }
+  .box-25.logopic img {
+    width: 20%;
+  }
+  .box-25.logopic {
+    text-align: center;
+  }
+  .box-25.third, .box-25.second {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+  .contacts, .terms {
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  .box-25.fourth {
+    padding-top: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+  .social {
+    margin-top: 5px;
+    height: 85px;
+    width: 100%;
+    text-align: center;
+  }
+  .social-wrapper {
+    display: inline-block;
+    float: none;
+  }
+  .newsletter .box-50 p {
+    font-size: 19px;
+    padding-top: 0;
+  }
+  input[type=email] {
+    margin: 0px;
+    width: 100%;
+  }
+  .box-15 {
+    width: 100%;
+  }
+  .newsletter .btn-big {
+    padding: 13px 59px 13px 59px;
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 29px;
+    width: 100%;
+  }
+  .accreditations p {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-size: 10px;
+  }
+  /*------------------- our_work --------------------*/
+  .our-works .box-33 {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .project h1 {
+    font-size: 50px;
+    margin: 30px 10px;
+    line-height: 0.9;
+  }
+  .project p {
+    padding: 0 20px 14px 20px;
+  }
+  .cifas-section {
+    height: auto;
+  }
+  .box-50.pic {
+    text-align: center;
+    padding: 20px 30px;
+  }
+  .visitors .box-33 {
+    margin: 0 0 7px 0;
+  }
+  .quote-text {
+    width: 100%;
+    padding: 0 40px;
+  }
+  .london-luxury-section {
+    height: auto;
+  }
+  .project h2 {
+    margin: 0 10px 15px 10px;
+  }
+  .cereal-killer-section {
+    height: auto;
+  }
+  .explore-kent-logo {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  /*------------------- services --------------------*/
+  .services-bg-text {
+    position: inherit;
+    padding: 15px 40px;
+    padding-top: 20%;
+  }
+  .services-bg-pic h1 {
+    font-size: 30px;
+    line-height: 40px
+  }
+  .services-dark {
+    height: auto;
+  }
+  .services-dark-text h1 {
+    font-size: 40px;
+    padding: 10px 30px 0 30px;
+    line-height: 0.8;
+  }
+  .services-dark-text p {
+    padding: 0 40px 20px 40px;
+  }
+  .our-key-services h1 {
+    line-height: 0.9;
+    padding: 10px 30px 0 30px;
+  }
+  .our-key-services h2 {
+    margin: 0;
+  }
+  .our-key-services .btn-big {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
+  .bg-mint h1 {
+    line-height: 1;
+    font-size: 35px;
+  }
+  .bg-mint-text p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bg-mint-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .blockquote .quote {
+    font-size: 19px;
+  }
+  /*------------------- about_us --------------------*/
+  .intro-box-2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .bg-text {
+    position: relative;
+    top: 70px;
+    left: 0;
+  }
+  .key-players .info-box-child {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+  }
+  .bg-pic-1 {
+    height: 330px;
+    background-image: url(images/value-creative.jpg);
+    /*background-size: contain;*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .bg-pic-2 {
+    height: 330px;
+    background-image: url(images/value-collaborative.jpg);
+    /*background-size: contain;*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .bg-pic-3 {
+    height: 330px;
+    background-image: url(images/value-courageous.jpg);
+    /*background-size: contain;*/
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .our-values-text-1, .our-values-text-2, .our-values-text-3 {
+    position: relative;
+    width: 60%;
+    top: 40px;
+    left: 20%;
+  }
+  .our-awards-accreditations h1 {
+    padding-top: 20px;
+    line-height: 0.8;
+  }
+  /*---------------------------- contacts.html --------------------------- */
+  .contact-picture h1 {
+    line-height: 0.8;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .contact-picture h3 {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+  .contact-address p {
+    line-height: 0.9;
+  }
+  .contact-map iframe {
+    width: 100%;
+    height: 310px;
+  }
+}
+
+@media screen and (min-width:900px) {
+  /* --  ja nav domats telefonam, tad min-width lieto -- */
+  body {
+    background-color:
+  }
+}
+
+@media screen and (max-width:600px) {
+  .slider img {
+    height: 260px;
+  }
+}
